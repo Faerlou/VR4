@@ -4,17 +4,22 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
  
   <style>
-
+.transparent20 {
+    filter: alpha(Opacity=20); /* Полупрозрачность для IE */
+    opacity: 0.20; /* Полупрозрачность для других браузеров */ 
+   }
 </style>
 
   <body>
-    <a-scene embedded arjs>
-
-<a-scene>
-      <a-entity camera></a-entity>
-      <a-sky src="https://cdn.glitch.global/4c68df5b-576f-4389-9e0b-f2194ff0a297/timemachine1%20(1).png?v=1676917719057"></a-sky>
+   
+ 
+    <a-scene>  
+      <a-sky src="https://cdn.glitch.global/4c68df5b-576f-4389-9e0b-f2194ff0a297/timemachine1%20(1).png?v=1676917719057" class="transparent20"></a-sky>
     </a-scene>
-
+<a-scene embedded arjs>
+ <a-entity camera class="transparent20"> </a-entity>
 </a-scene>
+
+
   </body>
 </html>
