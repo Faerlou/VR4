@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
- 
-  <style>
-.transparent20 {
-    filter: alpha(Opacity=20); /* Полупрозрачность для IE */
-    opacity: 0.20; /* Полупрозрачность для других браузеров */ 
-   }
-</style>
-
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
   <body>
-   
- <a href="https://faerlou.github.io/ARGo/">
-    <a-scene>  
-      <a-sky src="https://cdn.glitch.global/4c68df5b-576f-4389-9e0b-f2194ff0a297/ozero3.png?v=1677245049203" class="transparent20" scale="1 1 1" rotation="0 140 0"></a-sky>
+    <a href="https://faerlou.github.io/ARGo/">
+    <a-scene>
+      <a-sky src="FK.png" scale="3 3 3" rotation="0 100 0"></a-sky>
     </a-scene>
-<a-scene embedded arjs>
- <a-entity camera class="transparent20"> </a-entity>
-</a-scene>
-</a>
-
+    </a>
   </body>
 </html>
